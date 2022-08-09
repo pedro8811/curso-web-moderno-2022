@@ -1,0 +1,9 @@
+body{
+    align-items: center;
+    text-align: center;
+    background-color: rgb(61, 61, 61);
+}
+
+h1{
+    font-size: 150px;
+}
