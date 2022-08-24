@@ -1,0 +1,4 @@
+npm i -g create-react-app
+create-react-app exercicios
+
+npx create-react-app exercicios
