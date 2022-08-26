@@ -15,5 +15,5 @@ body{
   text-align: center;
 
   color: #fff;
-  background: linear-gradient(to right, rgb(83,105,118), rgb(41,46,73));
+  background: linear-gradient(90deg, rgba(48,0,82,1) 0%, rgba(0,173,187,1) 100%);
 }
