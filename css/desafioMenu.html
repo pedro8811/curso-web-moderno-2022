@@ -7,7 +7,100 @@
     <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <style>
-        /* ... */
+        body{
+            margin: 0;
+            font-family: monospace;
+            font-size: 1rem;
+        }
+
+        .menu-toggle{
+            display: none;
+            background-color: #414141;
+            
+        }
+
+        .logo a img{
+            width: 27em;
+            padding: 5px;
+        }
+
+        .cabecalho{
+            display: flex;
+            border-bottom: solid 5px rgb(255, 0, 0);
+            background-color: #002B5B;
+        }
+
+        .menu{
+            margin: auto;
+            margin-left: 1px;
+        }
+
+        .menu ul {
+            list-style-type: none;
+            text-decoration: none;
+            display: flex;
+            padding-left: 0;
+            justify-content: left;
+        }
+
+        .menu li{
+            border-radius: 7px;
+            /* box-shadow: 1px 1px 3px black; */
+            padding: 15px;
+            margin: 2px 6px;
+            background-color: #2B4865;
+            color: white;
+            transition: background-color .4s;
+        }
+
+        .menu li a{
+            color: #8FE3CF;
+            text-decoration: none;
+        }
+
+        .menu li:hover{
+            cursor: pointer;
+            background-color: #256D85;
+        }
+
+        .autenticacao{
+            margin: auto;
+            margin-right: 1rem;
+        }
+
+        .autenticacao a{
+            color: #8FE3CF;
+            text-decoration: none;
+            border-radius: 7px;
+            /* box-shadow: 1px 1px 3px black; */
+            padding: 15px;
+            margin: 2px 6px;
+            background-color: #2B4865;
+            transition: background-color .4s;
+        }
+
+        .autenticacao a:hover{
+            cursor: pointer;
+            background-color: #256D85;
+        }
+
+        .autenticacao .botao{
+            background-color: #0080ff;
+        }
+
+        @media (max-width: 600px) {
+            .menu-toggle{
+                display: block;
+            }
+
+            .menu{
+                display: none;
+            }
+
+            .autenticacao{
+                display: none;
+            }
+        }
     </style>
 </head>
 
@@ -39,7 +132,7 @@
         </nav>
         <aside class="autenticacao">
             <a href="#login">Login</a>
-            <a href="#registar" class="botao destaque">Registrar</a>
+            <a href="#registar" class="botao">Registrar</a>
         </aside>
     </header>
 
