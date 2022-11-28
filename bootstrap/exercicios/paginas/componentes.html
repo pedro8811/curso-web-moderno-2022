@@ -10,6 +10,11 @@
     integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
     crossorigin="anonymous"
   ></script>
+  <script src="https://unpkg.com/@popperjs/core@2"></script>
+  <script
+    src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"
+    type="text/javascript"
+  ></script>
 </head>
 
 <div class="jumbotron p-4 my-1">
@@ -43,6 +48,28 @@
   <div class="mb-3">
     <button class="btn btn-primary">Salvar</button>
     <button class="btn btn-secondary">Cancelar</button>
+    <button class="btn btn-outline-success">Finalizar</button>
+    <button class="btn btn-danger" disabled>Disabled</button>
+    <button class="btn btn-warning" data-bs-toggle="button">Selecione</button>
+  </div>
+
+  <div class="btn-group mb-3">
+    <button class="btn btn-info">Esquerda</button>
+    <button type="button" class="btn btn-info active">Centro</button>
+    <button class="btn btn-info">Direita</button>
+  </div>
+
+  <div class="dropdown">
+    <button
+      class="btn btn-danger btn-lg dropdown-toggle"
+      data-bs-toggle="dropdown"
+    >
+      Comprar!
+    </button>
+    <div class="dropdown-menu">
+      <a href="#" class="dropdown-item">Paypal</a>
+      <a href="#" class="dropdown-item">Pagseguro</a>
+    </div>
   </div>
 </div>
 
@@ -59,6 +86,27 @@
 <hr />
 
 <!-- Progresso -->
+<div>
+  <div class="progress mb-4">
+    <div class="progress-bar" style="width: 25%"></div>
+  </div>
+
+  <div class="progress mb-4">
+    <div
+      class="progress-bar progress-bar-striped bg-success"
+      style="width: 50%"
+    >
+      50%
+    </div>
+  </div>
+
+  <div class="progress" style="height: 20px">
+    <div class="progress-bar" style="width: 15%">15%</div>
+    <div class="progress-bar bg-danger" style="width: 30%">30%</div>
+    <div class="progress-bar bg-info" style="width: 20%">20%</div>
+    <div class="progress-bar bg-warning" style="width: 25%">25%</div>
+  </div>
+</div>
 
 <h1 class="mt-5">
   3. Mensagens (Alertas) -
@@ -73,6 +121,22 @@
 <hr />
 
 <!-- Alertas -->
+<div>
+  <div class="alert alert-success">Operação realizada com sucesso!</div>
+  <div class="alert alert-warning">
+    <strong>Cuidado!</strong> Operação gerou impacto no estoque!
+  </div>
+  <div class="alert alert-danger">
+    <strong>Erro!</strong> Ocorreu um erro inesperado!
+    <a href="#" class="alert-link">Mais detalhes</a>
+  </div>
+  <div class="alert alert-success">
+    <h4 class="alert-heading">Parabéns!</h4>
+    <p>Processo realizado com sucesso!</p>
+    <hr />
+    <p class="mb-0">Pode ficar orgulhoso!</p>
+  </div>
+</div>
 
 <h1 class="mt-5">
   4. Paginação -
@@ -86,7 +150,34 @@
 </h1>
 <hr />
 
-<!-- Peginação -->
+<!-- Paginação -->
+<div>
+  <nav>
+    <ul class="pagination">
+      <li class="page-item">
+        <a href="#" class="page-link">Anterior</a>
+      </li>
+      <li class="page-item">
+        <a href="#" class="page-link">1</a>
+      </li>
+      <li class="page-item">
+        <a href="#" class="page-link">2</a>
+      </li>
+      <li class="page-item">
+        <a href="#" class="page-link">3</a>
+      </li>
+      <li class="page-item">
+        <a href="#" class="page-link">4</a>
+      </li>
+      <li class="page-item">
+        <a href="#" class="page-link">5</a>
+      </li>
+      <li class="page-item">
+        <a href="#" class="page-link">Próximo</a>
+      </li>
+    </ul>
+  </nav>
+</div>
 
 <h1 class="mt-5">
   5. Tooltip -
@@ -101,6 +192,22 @@
 <hr />
 
 <!-- Tooltip -->
+<div>
+  <div class="alert alert-warning">
+    Precisa chamar uma função JS!
+    <strong>E agora?</strong>
+  </div>
+
+  <button
+    type="button"
+    class="btn btn-danger"
+    data-bs-toggle="tooltip"
+    data-bs-placement="top"
+    data-bs-title="Tooltip on top"
+  >
+    Excluir
+  </button>
+</div>
 
 <h1 class="mt-5">
   6. Slider -
@@ -131,5 +238,9 @@
 <!-- Accordion -->
 
 <script>
-  // ...
+  // funciona?
+  $(document).ready(function () {
+    $('[data-bs-toggle="tooltip"]').tooltip();
+  });
+  
 </script>
