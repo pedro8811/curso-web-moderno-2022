@@ -12,7 +12,8 @@
             .then(resp => resp.text())
             .then(html => {
                 destino.innerHTML = html
-                eval(html.match(/\<script\>([\s\S]*)\<\/script>/))
+                const resultado = html.match(/\<script\>([\s\S]*)\<\/script>/)
+                eval(resultado && resultado.length >= 2 ? resultado[1] : null)
             })
     }
 

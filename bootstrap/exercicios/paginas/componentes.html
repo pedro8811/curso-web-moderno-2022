@@ -17,6 +17,12 @@
   ></script>
 </head>
 
+<style>
+  html{
+    padding: 5px;
+  }
+</style>
+
 <div class="jumbotron p-4 my-1">
   <h1 class="display-4">Componentes</h1>
   <p class="lead m-1">Exemplo de alguns componentes do Bootstrap.</p>
@@ -222,6 +228,39 @@
 <hr />
 
 <!-- Slider -->
+<div>
+  <div class="carousel slide" id="slider" data-bs-ride="carousel">
+    <div class="carousel-inner bg-dark">
+      <div class="carousel-item active">
+        <img
+          src="/bootstrap/exercicios/imgs/slide1.png"
+          alt="Slide1"
+          class="d-block mx-auto"
+        />
+      </div>
+      <div class="carousel-item">
+        <img
+          src="/bootstrap/exercicios/imgs/slide2.png"
+          alt="Slide2"
+          class="d-block mx-auto"
+        />
+      </div>
+      <div class="carousel-item">
+        <img
+          src="/bootstrap/exercicios/imgs/slide3.png"
+          alt="Slide3"
+          class="d-block mx-auto"
+        />
+      </div>
+    </div>
+    <a href="#slider" class="carousel-control-prev" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </a>
+    <a href="#slider" class="carousel-control-next" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </a>
+  </div>
+</div>
 
 <h1 class="mt-5">
   7. Accordion -
@@ -236,11 +275,52 @@
 <hr />
 
 <!-- Accordion -->
+<div>
+  <div class="mb-5" id="accordion">
+    <div class="card">
+      <div class="card-header" id="pergunta1">
+        <h5 class="mb-0">
+          <button class="btn btn-link" data-bs-toggle="collapse" data-bs-target="#resposta1">
+            Qual é o maior time do Brasil?
+          </button>
+        </h5>
+      </div>
+      <div class="collapse" id="resposta1" data-bs-parent="#accordion">
+        <div class="card-body">
+          Posso dizer? :)
+        </div>
+      </div>
+      <div class="card-header" id="pergunta2">
+        <h5 class="mb-0">
+          <button class="btn btn-link" data-bs-toggle="collapse" data-bs-target="#resposta2">
+            Teste 2?
+          </button>
+        </h5>
+      </div>
+      <div class="collapse" id="resposta2" data-bs-parent="#accordion">
+        <div class="card-body">
+          Teste 2!
+        </div>
+      </div>
+      <div class="card-header" id="pergunta3">
+        <h5 class="mb-0">
+          <button class="btn btn-link" data-bs-toggle="collapse" data-bs-target="#resposta3">
+            Teste 3?
+          </button>
+        </h5>
+      </div>
+      <div class="collapse" id="resposta3" data-bs-parent="#accordion">
+        <div class="card-body">
+          Teste 3!
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
 <script>
   // funciona?
   $(document).ready(function () {
     $('[data-bs-toggle="tooltip"]').tooltip();
   });
-  
 </script>
