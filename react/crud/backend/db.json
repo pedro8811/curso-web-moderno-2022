@@ -1,0 +1,24 @@
+{
+  "users": [
+    {
+      "name": "Pedro Henrique",
+      "email": "pedro@gmail.com",
+      "id": 1
+    },
+    {
+      "name": "Vinicius Mendes",
+      "email": "vinicius@gmail.com",
+      "id": 2
+    },
+    {
+      "name": "Marisol",
+      "email": "marisol@gmail.com",
+      "id": 3
+    },
+    {
+      "name": "Danyella",
+      "email": "cobranca@gmail.com",
+      "id": 4
+    }
+  ]
+}
