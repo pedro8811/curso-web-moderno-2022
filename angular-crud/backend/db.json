@@ -1,39 +1,24 @@
 {
   "products": [
     {
-      "id": 1,
-      "name": "Caneta BIC Preta",
-      "price": 5.89
+      "name": "Samsung s10e",
+      "price": "1199.99",
+      "id": 1
     },
     {
-      "id": 2,
-      "name": "Notebook Mac Pro",
-      "price": 12000.89
+      "name": "Notebook Asus",
+      "price": "5799.99",
+      "id": 2
     },
     {
-      "id": 3,
-      "name": "Samsung S20+",
-      "price": 5000.89
+      "name": "iPhone SE (2° Geração)",
+      "price": "1000",
+      "id": 3
     },
     {
-      "name": "Veio do Formulario",
-      "price": "9.99",
+      "name": "Samsung M31",
+      "price": "1699",
       "id": 4
-    },
-    {
-      "name": "Geladeira",
-      "price": "1890",
-      "id": 5
-    },
-    {
-      "name": "Notebook",
-      "price": "1567.89",
-      "id": 6
-    },
-    {
-      "name": "Lapis Preto",
-      "price": "2.50",
-      "id": 7
     }
   ]
 }
